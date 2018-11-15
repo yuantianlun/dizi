@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>代理记账</title>
+    <link rel="stylesheet" href="qicaihulian/reset.css">
+    <link type="text/css" rel="stylesheet" href="qicaihulian/header.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link type="text/css" rel="stylesheet" href="./css/header1.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="js/modernizr.custom.js"></script>
+    <script src="./js/jquery.min.js" type="text/ecmascript"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/second_menu.js" type="text/ecmascript"></script>
+
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="header-container">
+        <div class="header-top">
+
+            <!-- Header Language -->
+            <div class="col-xs-12 col-sm-6">
+                <div class="welcome-msg">Welcome to Seven Wealth！</div>
+                <div class="dropdown jtv-language-box"><a role="button" data-toggle="dropdown" data-target="#"
+                                                          class="block-language dropdown-toggle" href="#"> <img
+                        src="images/flag-english.jpg" alt="language"> English <span class="caret"></span> </a>
+
+                </div>
+                <!-- End Header Language -->
+
+                <!-- Header Currency -->
+                <div class="dropdown jtv-currency-box"><a role="button" data-toggle="dropdown" data-target="#"
+                                                          class="block-currency dropdown-toggle" href="#"> USD <span
+                        class="caret"></span></a>
+
+                </div>
+                <!-- End Header Currency -->
+
+            </div>
+            <div class="col-xs-6">
+                <!-- Header Top Links -->
+                <div class="jtv-top-links">
+                    <div class="links">
+                        <ul>
+                            <li><a title="My Account" href="#"><span class="">我的账户</span></a></li>
+                            <li><a title="Wishlist" href="#">我的关注</a></li>
+                            <li><a title="Checkout" href="#"><span class="">登陆</span></a></li>
+                            <!--<li>-->
+                            <!--<div class="dropdown block-company-wrapper "><a role="button" data-toggle="dropdown"-->
+                            <!--data-target="#"-->
+                            <!--class="block-company dropdown-toggle"-->
+                            <!--href="#"> More <span-->
+                            <!--class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li>-->
+                            <!--<a href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/about_us.html">-->
+                            <!--About Us </a></li>-->
+                            <!--<li><a href="#"> Customer Service </a></li>-->
+                            <!--<li><a href="#"> Privacy Policy </a></li>-->
+                            <!--<li><a href="#">Site Map </a></li>-->
+                            <!--<li><a href="#">Search Terms </a></li>-->
+                            <!--<li><a href="#">Advanced Search </a></li>-->
+                            <!--</ul>-->
+                            <!--</div>-->
+                            <!--</li>-->
+                            <!--<li><a href="#"><span class="">Log In</span></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Header Top Links -->
+            </div>
+
+        </div>
+        <div style="width: 1200px;margin:0 auto; display: flex; align-items: center;">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <div class="jtv-top-cart-box">
+                    <!-- Top Cart -->
+                    <div class="mini-cart">
+                        <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle"><a
+                                href="#"> <span
+                                class="cart_count">2</span><span class="price">服务进行中</span> </a></div>
+                        <!--<div>-->
+                        <!--<div class="jtv-top-cart-content">-->
+
+                        <!--&lt;!&ndash;block-subtitle&ndash;&gt;-->
+                        <!--<ul class="mini-products-list" id="cart-sidebar">-->
+                        <!--<li class="item first">-->
+                        <!--<div class="item-inner"><a class="product-image" title="Product Title Here"-->
+                        <!--href="single_product.html"><img-->
+                        <!--alt="Product Title Here"-->
+                        <!--src="images/products/img01.jpg">-->
+                        <!--</a>-->
+                        <!--<div class="product-details">-->
+                        <!--<div class="access"><a class="jtv-btn-remove" title="Remove This Item"-->
+                        <!--href="#">Remove</a> <a class="btn-edit"-->
+                        <!--title="Edit item"-->
+                        <!--href="#"><i-->
+                        <!--class="icon-pencil"></i><span-->
+                        <!--class="hidden">Edit item</span></a>-->
+                        <!--</div>-->
+                        <!--<p class="product-name"><a href="#">Product Title Here</a></p>-->
+                        <!--<strong>1</strong> x <span class="price"></span></div>-->
+                        <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="item">-->
+                        <!--<div class="item-inner"><a class="product-image" title="Product Title Here"-->
+                        <!--href="single_product.html"><img-->
+                        <!--alt="Product Title Here"-->
+                        <!--src="images/products/img02.jpg">-->
+                        <!--</a>-->
+                        <!--<div class="product-details">-->
+                        <!--<div class="access"><a class="jtv-btn-remove" title="Remove This Item"-->
+                        <!--href="#">Remove</a> <a class="btn-edit"-->
+                        <!--title="Edit item"-->
+                        <!--href="#"><i-->
+                        <!--class="icon-pencil"></i><span-->
+                        <!--class="hidden">Edit item</span></a>-->
+                        <!--</div>-->
+                        <!--<p class="product-name"><a href="#">Product Title Here</a></p>-->
+                        <!--<strong>1</strong> x <span class="price"></span></div>-->
+                        <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="item last">-->
+                        <!--<div class="item-inner"><a class="product-image" title="Product Title Here"-->
+                        <!--href="single_product.html"><img-->
+                        <!--alt="Product Title Here"-->
+                        <!--src="images/products/img04.jpg">-->
+                        <!--</a>-->
+                        <!--<div class="product-details">-->
+                        <!--<div class="access"><a class="jtv-btn-remove" title="Remove This Item"-->
+                        <!--href="#">Remove</a> <a class="btn-edit"-->
+                        <!--title="Edit item"-->
+                        <!--href="#"><i-->
+                        <!--class="icon-pencil"></i><span-->
+                        <!--class="hidden">Edit item</span></a>-->
+                        <!--</div>-->
+                        <!--<p class="product-name"><a href="#">Product Title Here</a></p>-->
+                        <!--<strong>1</strong> x <span class="price"></span></div>-->
+                        <!--</div>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+
+                        <!--&lt;!&ndash;actions&ndash;&gt;-->
+                        <!--<div class="actions">-->
+                        <!--<button class="btn-checkout" title="Checkout" type="button" onClick="#">-->
+                        <!--<span>Checkout</span></button>-->
+                        <!--<a href="#" class="view-cart"><span>View Cart</span></a></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12 jtv-logo-box">
+                <!-- Header Logo -->
+                <div class="logo"><h1><a title="eCommerce" href="index.html"><img alt="eCommerce" src="images/logo.png">
+                </a></h1></div>
+                <!-- End Header Logo -->
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 ">
+                <div class="search-box">
+                    <form action="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/cat" method="POST"
+                          id="search_mini_form" name="Categories">
+                        <input type="text" placeholder="搜索" value="" maxlength="70" name="search"
+                               id="search">
+                        <button type="button" class="search-btn-bg"><span class="glyphicon glyphicon-search"></span>&nbsp;
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- Navigation -->
+<nav>
+
+    <div class="nav-inner">
+        <!-- BEGIN NAV -->
+        <ul id="nav" class="">
+            <li class="drop-menu a"><a href="index.html" class="level-top active"><span>全部产品导航</span></a>
+                <div class="banner1_wrap">
+                    <div class="banner1" style="width: 230px;">
+                        <ul class="banner1_left">
+                            <li class="second_menu1 second_menu">
+                                <div class="second_menu1_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">企业工商服务</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">快人一步！即刻拥有自己的公司</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">公司注册</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">内资公司注册</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">外资公司注册</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">股份公司注册</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">有限合伙公司注册</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">个人独资企业注册</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">行政许可</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">进出口权</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">食品经营</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">劳务派遣</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">人力资源许可证</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">医疗器械</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">ICP经营许可</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">环评</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">公司变更</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">公司服权变更</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">地址变更</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">注册资本变更</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">公司转让</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">公司注销</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="https://www.huisuanzhang.com/gongshang.html" target="_blank"><p
+                                            class="second_menu_right_title" style="color: white;line-height: 80px;
+    margin: 0;">开设公司</p></a>
+
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left1.png" alt="开公司图标"
+                                         class="second_menu_left1">
+                                </div>
+                            </li>
+                            <li class="second_menu2 second_menu">
+                                <div class="second_menu2_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">代理记账</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">中小企业的专业选择、代账周期越长优惠越多</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">代理记账</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">清理乱涨</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">出口退税</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">税务异常处理</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">税收策划</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">个人节税包</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">企业节税包</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">公司服权架构设计</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="https://www.huisuanzhang.com/account.html" target="_blank"><p
+                                            class="second_menu_right_title" style="color: white;line-height: 80px;
+    margin: 0;">财税服务</p></a>
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left2.png" alt="代理记账图标"
+                                         class="second_menu_left2">
+                                </div>
+                            </li>
+                            <li class="second_menu3 second_menu">
+                                <div class="second_menu3_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">企业服务</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">低价高质！让您的企业体验真正的互联网模式</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">社保代缴</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">企业社保外包</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">个人社保外包</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">劳务派遣</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">岗位外包</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">代发工资</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">零散用工</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="index.html" target="_blank"><p class="second_menu_right_title"
+                                                                            style="color: white;line-height: 80px;
+    margin: 0;">人事社保</p></a>
+
+
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left3.png" alt="增值服务图标"
+                                         class="second_menu_left3">
+                                </div>
+                            </li>
+                            <li class="second_menu4 second_menu">
+                                <div class="second_menu4_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">企业服务</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">低价高质！让您的企业体验真正的互联网模式</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">企业法律顾问</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">企业法律顾问</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">拟审合同</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">拟审合同</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">找律师打官司</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">找律师打官司</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="javascript:void(0);" target="_blank"><p class="second_menu_right_title"
+                                                                                     style="color: white;line-height: 80px;
+    margin: 0;">法律服务</p></a>
+
+
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left4.png" alt="增值服务图标"
+                                         class="second_menu_left4">
+                                </div>
+                            </li>
+                            <li class="second_menu5 second_menu">
+                                <div class="second_menu5_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">企业服务</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">低价高质！让您的企业体验真正的互联网模式</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">商标注册</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">国外商标注册</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">专利申请</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">软件普作</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="javascript:void(0);" target="_blank"><p class="second_menu_right_title"
+                                                                                     style="line-height: 80px;
+    margin: 0;color: white;">知识产权</p></a>
+
+
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left3.png" alt="增值服务图标"
+                                         class="second_menu_left3">
+                                </div>
+                            </li>
+                            <li class="second_menu6 second_menu">
+                                <div class="second_menu6_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">企业服务</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">低价高质！让您的企业体验真正的互联网模式</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">抵押贷款</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">按揭房贷款</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">汽车抵押贷款</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">信用贷款</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">个人信用贷款</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">企业信用贷款</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="javascript:void(0);" target="_blank"><p class="second_menu_right_title"
+                                                                                     style="line-height: 80px;
+    margin: 0;color: white;">金融服务</p></a>
+
+
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left3.png" alt="增值服务图标"
+                                         class="second_menu_left3">
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="drop-menu"><a href="" class="level-top"> <span>首页</span></a></li>
+            <li class="mega-menu"><a class="level-top" href="single_productList.html"><span>人事社保</span></a></li>
+            <li class="mega-menu"><a class="level-top" href="single_productList.html"><span>财税服务</span></a></li>
+            <li class="mega-menu"><a class="level-top" href="blog.html"><span>企业动态</span></a></li>
+            <li class="mega-menu"><a class="level-top" href="about.html"><span>关于我们</span></a></li>
+            <!--<li class="mega-menu"><a class="level-top" href="shop_grid.html"><span>Drinks</span></a></li>-->
+            <!--<li class="mega-menu"><a class="level-top" href="#"><span>Blog</span></a></li>-->
+            <li class="nav-custom-link mega-menu"><a class="level-top" href="javascript:;"><i
+                    class="iconfont">&#xe60f;</i> <span>客服热线：400-888-8888</span> </a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        var a = document.querySelector(".a"),
+            b = document.querySelector(".banner1_wrap");
+        a.onmouseover = function () {
+            b.style.display = "block";
+
+        }
+        a.onmouseout = function () {
+            b.style.display = 'none';
+        }
+        b.onmouseout = function () {
+            b.style.display = 'none';
+        }
+
+    </script>
+
+
+</nav>
+<!-- end nav -->
+
+<!-- our features -->
+<div class="our-features-boxBox" style="width: 100%;background: #f2f2f2;">
+    <div class="our-features-box ">
+
+        <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="feature-box first"><i class="icon-plane icons"></i>
+                <div class="content">
+                    <h6>为客户提供全行业支持服务</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="feature-box"><i class="icon-earphones-alt icons"></i>
+                <div class="content">
+                    <h6>为客户提供全天17小时支持服务</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="feature-box"><i class="icon-like icons"></i>
+                <div class="content">
+                    <h6>95%客户满意认可度</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="feature-box last"><i class="icon-tag icons"></i>
+                <div class="content">
+                    <h6>为行业提供标准化服务</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="Banner">
+
+    <div class="Banner_left">
+        <div class="swiper-container" style="width: 444px;height:532px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/slide11.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide22.jpg" alt="">
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide33.jpg" alt="">
+
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <!--<div class="swiper-pagination"></div>-->
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    </script>
+    <div class="Banner_right">
+        <div class="Banner_Top">
+            <h3>服务名称</h3>
+            <h5>￥3000</h5>
+            <p>服务详细介绍服务详细介绍服，务详细介绍服务详细介绍服务。详细介绍服务详细介绍服。务详细介绍服务详细介绍服务，详细介绍服务详细介</p>
+        </div>
+        <div class="Banner_Bottom">
+            <div class="Banner_BottomT">
+                <div class="Banner_BottomT1">
+                    <p>周期</p>
+                    <label for="">
+                        <select class="Banner_BottomT1se">
+                            <option value="volvo">1</option>
+                            <option value="saab">3</option>
+                            <option value="opel">6</option>
+                            <option value="audi">12</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="Banner_BottomT2">
+                    <p>地区</p>
+                    <label for="">
+                        <select class="Banner_BottomT2se">
+                            <option value="volvo">1</option>
+                            <option value="saab">3</option>
+                            <option value="opel">6</option>
+                            <option value="audi">12</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <div class="Banner_BottomC">Share this campaign with your friends and family on QQ, WeChat</div>
+            <div class="Banner_BottomB">
+                <div class="Banner_BottomBButton1">分享这项服务</div>
+                <div class="Banner_BottomBButton2">立即咨询</div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="ABK">
+    <div class="ABK_Box">
+        <div class="ABK_BoxTitle">
+            <div class="ABK_BoxTitleT">商品详情</div>
+        </div>
+        <div class="ABK_Box1">
+            <div class="ABK_Box1Title">
+                <h3>代理记账</h3>
+            </div>
+            <div class="ABK_Box1Section">
+                <ul class="ABK_Box1SectionLeft">
+                    <li class="ABK_Box1SectionLeftLi">
+                        <div class="ABK_Box1SectionLeftLiT">
+                            <h6>01</h6>
+                            <span>资质正规</span>
+                        </div>
+                        <p>江苏省内领先的企业服务互联网平台，苏州市会计服务行业协会“副会长单位。资质正规过硬</p>
+                    </li>
+                    <li class="ABK_Box1SectionLeftLi">
+                        <div class="ABK_Box1SectionLeftLiT">
+                            <h6>02</h6>
+                            <span>专属服务</span>
+                        </div>
+                        <p>一对一服务 服务进度了如指掌</p>
+                    </li>
+                </ul>
+                <div class="ABK_Box1SectionCenter">
+                    <img src="" alt="">
+                </div>
+                <ul class="ABK_Box1SectionRight">
+                    <li class="ABK_Box1SectionRightLi">
+                        <div class="ABK_Box1SectionRightLiT">
+
+                            <span>团队强大</span>
+                            <h6>03</h6>
+                        </div>
+                        <p>拥有数百位具有会计专业职称的财税人员具有丰富从业经验</p>
+                    </li>
+                    <li class="ABK_Box1SectionRightLi">
+                        <div class="ABK_Box1SectionRightLiT">
+                            <span>安全保密</span>
+                            <h6>04</h6>
+
+                        </div>
+                        <p>A级重合同守信用单位，客户资料信息严格保密 安全可靠</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ABK_Box2">
+            <div class="ABK_Box2Title">
+                <h3>服务流程</h3>
+            </div>
+            <div class="ABK_Box2Section">
+                <img src="images/List/ABK_Box2Sectionimg.png" alt="">
+            </div>
+        </div>
+        <div class="ABK_Box3">
+            <div class="ABK_Box3Title">
+                <h3>服务内容</h3>
+            </div>
+            <div class="ABK_Box3Section">
+                <ul class="ABK_Box3Section_Ul">
+                    <li class=" ABK_Box3Section_UlLi">
+                        <div class="redfangkuai"></div>
+                        <span>代理记账报税服务</span>
+                    </li>
+                    <li class=" ABK_Box3Section_UlLi">
+                        <div class="redfangkuai"></div>
+                        <span>进出口退税服务</span>
+                    </li>
+                    <li class=" ABK_Box3Section_UlLi">
+                        <div class="redfangkuai"></div>
+                        <span>统计申报、财政年检、工商年报</span>
+                    </li>
+                    <li class=" ABK_Box3Section_UlLi">
+                        <div class="redfangkuai"></div>
+                        <span>代办申请税控机、领购发票</span>
+                    </li>
+                    <li class=" ABK_Box3Section_UlLi">
+                        <div class="redfangkuai"></div>
+                        <span>申请发票增版、补章补照</span>
+                    </li>
+                    <li class=" ABK_Box3Section_UlLi">
+                        <div class="redfangkuai"></div>
+                        <span>清理乱账、风险提示</span>
+                    </li>
+                    <li class=" ABK_Box3Section_UlLi">
+                        <div class="redfangkuai"></div>
+                        <span>财税咨询、政策更新、协助检查</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="ABK_Box4">
+            <div class="ABK_Box4Title">
+                <h3>委托代理记账所需要提交的材料</h3>
+            </div>
+            <div class="ABK_Box4Section">
+                <p>1.现金单据（房租、水电费、差旅费、招待费、社保费、通讯费、运输费、邮递费等）</p>
+                <p>2. 银行单据（提现、转帐、贷记凭证、电汇、进帐单、借款单等）</p>
+                <p>3. 发票（本月1日---31日开具的所有发票）</p>
+                <p>4. 增值税清单（销项汇总清单、进项认证清单）</p>
+                <p>5. 公章（报表上所需盖的）</p>
+                <p>6. 员工资料（月工资额，身份证号码，姓名）</p>
+                <p>7. 其它所需资料</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-top">
+
+        <div style="text-align:center"><a href="index.html"><img src="images/footer-logo.png" alt="logo"> </a></div>
+        <address>
+            <p><i class="fa fa-map-marker"></i>江苏省苏州市姑苏区胥江路482号</p>
+            <p><i class="fa fa-mobile"></i><span>+86-0512-88888888</span></p>
+            <p><i class="fa fa-envelope"></i><span><a href="mailto:email@domain.com">sevenwealth@163.com</a></span></p>
+        </address>
+
+    </div>
+    <div class="footer-inner">
+
+        <div class="col-sm-4 col-xs-12 col-md-3">
+            <div class="footer-links">
+                <h5>导航</h5>
+                <ul class="links">
+                    <li><a href="#" title="Product Recall">开设公司</a></li>
+                    <li><a href="#" title="Gift Vouchers">财税服务</a></li>
+                    <li><a href="#" title="Returns &amp; Exchange">人事社保</a></li>
+                    <li><a href="#" title="Shipping Options">法律服务</a></li>
+                    <li><a href="#" title="Help &amp; FAQs">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 col-md-3">
+            <div class="footer-links">
+                <h5>我们的服务</h5>
+                <ul class="links">
+                    <li><a href="#">开设公司</a></li>
+                    <li><a href="#">财税服务</a></li>
+                    <li><a href="#">人事社保</a></li>
+                    <li><a href="#">法律服务</a></li>
+                    <li><a href="#">知识产权</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 col-md-2">
+            <div class="footer-links">
+                <h5>企业公众号</h5>
+                <ul class="links">
+                    <img src="images/erweima.png" alt="">
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+            <div class="footer-links">
+                <div class="footer-newsletter">
+                    <h5>意见反馈</h5>
+                    <form id="newsletter-validate-detail" method="post" action="#">
+                        <div class="newsletter-inner">
+
+                            <textarea class="newsletter-email" name='Email' placeholder='Enter Your Email'></textarea>
+                            <button class="button subscribe" type="submit" title="Subscribe">发送</button>
+                        </div>
+                    </form>
+                </div>
+                <div class=""  id="share-2">
+                    <h5>分享到：</h5>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <div style="width:1200px;margin:0 auto;">
+            <div class="col-sm-5 col-xs-12 coppyright">备案号@qw1234142531 版权所有：七财 技术支持：华宸科技</div>
+            <div class="col-sm-7 col-xs-12 payment-accept">
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+</body>
+</html>

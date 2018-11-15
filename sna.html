@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<style>
+    .choose-bg {
+        background: url(../images/why-bg-01.jpg) no-repeat 0px 0px;
+    }
+
+    .why-choose {
+        float: left;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .choose-main {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .chose {
+        float: left;
+        width: 1152px;
+        height: 116px;
+        margin: 0;
+        padding: 44px 0px 38px 48px;
+    }
+
+    .chose-txt {
+        float: left;
+        width: 256px;
+        height: 116px;
+        margin: 0;
+        padding: 0;
+        background: url(../images/why-img-01.jpg) no-repeat 0px 0px;
+    }
+
+    .chose-txt p {
+        float: left;
+        width: 197px;
+        height: 76px;
+        margin: 20px 0px;
+        margin-left: 40px;
+        padding: 0px 0px 0px 16px;
+        border-left: 3px solid #ffffff;
+        font-family: 微软雅黑;
+        font-size: 30px;
+        color: #ffffff;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    .chose-cont-01 {
+        float: left;
+        width: 140px;
+        height: 116px;
+        margin: 0;
+        padding: 0px 45px;
+    }
+
+    .bor-right-style1 {
+        border-right: 1px dashed #b6b6b6;
+    }
+
+    .chose-cont-01 h2 {
+        float: left;
+        width: 140px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: #035ce3;
+        font-weight: bold;
+        line-height: 60px;
+    }
+
+    .chose-cont-01 p {
+        float: left;
+        width: 140px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        font-family: 微软雅黑, 黑体, 宋体;
+        font-size: 17px;
+        color: #343434;
+        font-weight: bold;
+        line-height: 32px;
+    }
+
+    .chose-cont-02 {
+        float: left;
+        width: 100px;
+        height: 116px;
+        margin: 0;
+        padding: 0px 45px;
+    }
+
+    .chose-cont-02 h2 {
+        float: left;
+        width: 140px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: #035ce3;
+        font-weight: bold;
+        line-height: 60px;
+    }
+
+    .chose-cont-02 p {
+        float: left;
+        width: 140px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        font-family: 微软雅黑, 黑体, 宋体;
+        font-size: 17px;
+        color: #343434;
+        font-weight: bold;
+        line-height: 32px;
+    }
+
+
+</style>
+
+
+<body>
+<div class="why-choose choose-bg">
+    <div class="choose-main">
+        <div class="chose">
+            <div class="chose-txt"><p>为什么<br>选择华财？</p></div>
+            <div class="chose-cont-01 bor-right-style1">
+                <h2 data-speed="1500" data-from="0" data-to="22" data-decimals="0" class="textd timer">22</h2>
+                <p>年专注财税服务<img src="./images/why-txt-01.png" data-bd-imgshare-binded="1"></p>
+            </div>
+
+            <div class="chose-cont-01 bor-right-style1">
+                <h2><span data-speed="1500" data-from="0" data-to="20000" data-decimals="0"
+                          class="textd timer">20000</span>+</h2>
+                <p>企业客户服务经验<img src="./images/why-txt-03.png" data-bd-imgshare-binded="1"></p>
+            </div>
+            <div class="chose-cont-02">
+                <h2 data-speed="1500" data-from="0" data-to="3500" data-decimals="0" class="textd timer">3500</h2>
+                <p>高新企业认定<img src="./images/why-txt-04.png" data-bd-imgshare-binded="1"></p>
+            </div>
+            <div class="chose-cont-01 bor-right-style1">
+                <h2 data-speed="1500" data-from="0" data-to="18" data-decimals="0" class="textd timer">18</h2>
+                <p>全国服务分支机构<img src="./images/why-txt-02.png" data-bd-imgshare-binded="1"></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $.fn.countTo = function (options)
+    {
+        options = options || {};
+
+        $.fn.countTo.defaults = {
+            from: 0,               // ��ʼ����
+            to: 0,                 // ��������
+            speed: 1000,           // ����ʱ��
+            refreshInterval: 100,  // ˢ��ʱ��
+            decimals: 2,           // С����λ��
+            formatter: formatter,  // handler for formatting the value before rendering
+            onUpdate: null,        // callback method for every time the element is updated
+            onComplete: null       // callback method for when the element finishes updating
+        };
+
+        function formatter(value, settings) {
+            return value.toFixed(settings.decimals);
+        }
+
+
+        return $(this).each(function ()
+        {
+
+            // set options for current element
+            var settings = $.extend({}, $.fn.countTo.defaults,
+                {
+                    from:            $(this).data('from'),
+                    to:              $(this).data('to'),
+                    speed:           $(this).data('speed'),
+                    refreshInterval: $(this).data('refresh-interval'),
+                    decimals:        $(this).data('decimals')
+                }, options);
+
+
+
+            // how many times to update the value, and how much to increment the value on each update
+            var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                increment = (settings.to - settings.from) / loops;
+
+
+
+            // references & variables that will change with each update
+            var self = this,
+                $self = $(this),
+                loopCount = 0,
+                value = settings.from,
+                data = $self.data('countTo') || {};
+
+
+
+            $self.data('countTo', data);
+
+
+
+            // if an existing interval can be found, clear it first
+            if (data.interval) {
+                clearInterval(data.interval);
+            }
+
+            data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+            function render(value) {
+                var formattedValue = settings.formatter.call(self, value, settings);
+                $self.html(formattedValue);
+            }
+
+            function updateTimer()
+            {
+                value += increment;
+                loopCount++;
+
+                render(value);
+
+                if (typeof(settings.onUpdate) == 'function'){
+                    settings.onUpdate.call(self, value);
+                }
+
+                if (loopCount >= loops) {
+                    // remove the interval
+                    $self.removeData('countTo');
+                    clearInterval(data.interval);
+                    value = settings.to;
+
+                    if (typeof(settings.onComplete) == 'function') {
+                        settings.onComplete.call(self, value);
+                    }
+                }
+            }
+
+            // initialize the element with the starting value
+            render(value);
+        });
+    }
+
+    /*
+     $('.timer').each(function()
+     {
+     $(this).data('from',50);
+     $(this).data('to',100);
+     $(this).countTo();
+     });
+     */
+
+
+
+</script>
+
+<script>
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+
+
+            var needHeight = $(".why-choose").offset().top
+
+            var wintop = $(window).scrollTop();
+            console.log(needHeight,wintop)
+            if (wintop > needHeight) {
+                $('.timer').countTo();
+            }
+        });
+    });
+
+</script>

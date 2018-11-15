@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page needs -->
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile specific metas  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="css/share.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link type="text/css" rel="stylesheet" href="./css/header1.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/jquery.min.js" type="text/ecmascript"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/second_menu.js" type="text/ecmascript"></script>
+    <script src="js/sizeChange.js"></script>
+    <script src="js/jquery.share.min.js"></script>
+
+    <!--三级联动 js-->
+    <!--<script src="./js/jquery-1.11.3.min.js"></script>-->
+    <script src="./js/Popt.js"></script>
+    <script src="./js/cityJson.js"></script>
+    <script src="./js/citySet.js"></script>
+
+
+    <style type="text/css">
+        #yddContainer {
+            display: block;
+            font-family: Microsoft YaHei;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            top: -4px;
+            left: -4px;
+            font-size: 12px;
+            border: 1px solid
+        }
+
+        #yddTop {
+            display: block;
+            height: 22px
+        }
+
+        #yddTopBorderlr {
+            display: block;
+            position: static;
+            height: 17px;
+            padding: 2px 28px;
+            line-height: 17px;
+            font-size: 12px;
+            color: #5079bb;
+            font-weight: bold;
+            border-style: none solid;
+            border-width: 1px
+        }
+
+        #yddTopBorderlr .ydd-sp {
+            position: absolute;
+            top: 2px;
+            height: 0;
+            overflow: hidden
+        }
+
+        .ydd-icon {
+            left: 5px;
+            width: 17px;
+            padding: 0px 0px 0px 0px;
+            padding-top: 17px;
+            background-position: -16px -44px
+        }
+
+        .ydd-close {
+            right: 5px;
+            width: 16px;
+            padding-top: 16px;
+            background-position: left -44px
+        }
+
+        #yddKeyTitle {
+            float: left;
+            text-decoration: none
+        }
+
+        #yddMiddle {
+            display: block;
+            margin-bottom: 10px
+        }
+
+        .ydd-tabs {
+            display: block;
+            margin: 5px 0;
+            padding: 0 5px;
+            height: 18px;
+            border-bottom: 1px solid
+        }
+
+        .ydd-tab {
+            display: block;
+            float: left;
+            height: 18px;
+            margin: 0 5px -1px 0;
+            padding: 0 4px;
+            line-height: 18px;
+            border: 1px solid;
+            border-bottom: none
+        }
+
+        .ydd-trans-container {
+            display: block;
+            line-height: 160%
+        }
+
+        .ydd-trans-container a {
+            text-decoration: none;
+        }
+
+        #yddBottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 22px;
+            line-height: 22px;
+            overflow: hidden;
+            background-position: left -22px
+        }
+
+        .ydd-padding010 {
+            padding: 0 10px
+        }
+
+        #yddWrapper {
+            color: #252525;
+            z-index: 10001;
+            /*background: url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);*/
+        }
+
+        #yddContainer {
+            background: #fff;
+            border-color: #4b7598
+        }
+
+        #yddTopBorderlr {
+            border-color: #f0f8fc
+        }
+
+        #yddWrapper .ydd-sp {
+            /*background-image: url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)*/
+        }
+
+        #yddWrapper a, #yddWrapper a:hover, #yddWrapper a:visited {
+            color: #50799b
+        }
+
+        #yddWrapper .ydd-tabs {
+            color: #959595
+        }
+
+        .ydd-tabs, .ydd-tab {
+            background: #fff;
+            border-color: #d5e7f3
+        }
+
+        #yddBottom {
+            color: #363636
+        }
+
+        #yddWrapper {
+            min-width: 250px;
+            max-width: 400px;
+        }
+
+        <!--</style>
+    <style type="text/css">
+
+        ._citys {
+            width: 450px;
+            display: inline-block;
+            border: 2px solid #eee;
+            padding: 5px;
+            position: relative;
+            background: #ffffff;
+        }
+
+        ._citys span {
+            color: #56b4f8;
+            height: 15px;
+            width: 15px;
+            line-height: 15px;
+            text-align: center;
+            border-radius: 3px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            border: 1px solid #56b4f8;
+            cursor: pointer;
+        }
+
+        ._citys0 {
+            width: 100%;
+            height: 34px;
+            display: inline-block;
+            border-bottom: 2px solid #56b4f8;
+            padding: 0;
+            margin: 0;
+        }
+
+        ._citys0 li {
+            display: inline-block;
+            line-height: 34px;
+            font-size: 15px;
+            color: #888;
+            width: 80px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .citySel {
+            background-color: #56b4f8;
+            color: #fff !important;
+        }
+
+        ._citys1 {
+            width: 100%;
+            display: inline-block;
+            padding: 10px 0;
+        }
+
+        ._citys1 a {
+            width: 83px;
+            height: 35px;
+            display: inline-block;
+            background-color: #f5f5f5;
+            color: #666;
+            margin-left: 6px;
+            margin-top: 3px;
+            line-height: 35px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 13px;
+            overflow: hidden;
+        }
+
+        ._citys1 a:hover {
+            color: #fff;
+            background-color: #56b4f8;
+        }
+
+        .AreaS {
+            background-color: #56b4f8 !important;
+            color: #fff !important;
+        }
+    </style>
+
+
+</head>
+<body class="cms-index-index cms-home-page">
+
+<!--弹窗start-->
+<div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top:15vh;">
+    <div class="el-dialog__header">
+        <div class="makeaccount-popup-title"><span class="title-icon"><i class="icon-Bookkeeping"></i></span><span
+                class="title-word">享受无忧代账</span></div>
+        <button type="button" aria-label="Close" class="el-dialog__headerbtn"><i
+                class="el-dialog__close el-icon el-icon-close">x</i></button>
+    </div>
+    <div class="el-dialog__body">
+        <div class="layout">
+            <div class="query-people">已有<span class="query-num">0</span>人正在免费体验中</div>
+        </div>
+        <div class="layout">
+            <div class="chance"><span class="chance-word">联 系 人：</span></div>
+            <div class="chance-input el-input"><!----><input type="text" autocomplete="off" placeholder="如：吴先生"
+                                                             class="el-input__inner"><!----><!----><!----></div>
+        </div>
+        <div class="layout">
+            <div class="chance"><span class="chance-word"><i>*</i>手机号码：</span></div>
+            <div class="chance-input el-input"><!----><input type="text" autocomplete="off" placeholder="输入电话号码，七天无理由退款"
+                                                             class="el-input__inner"><!----><!----><!----></div>
+        </div>
+    </div>
+    <div class="el-dialog__footer">
+        <div class="ensure">
+            <div class="ensure-word">提交</div>
+        </div>
+    </div>
+</div>
+<!--弹窗end-->
+
+<!-- Header -->
+<header>
+    <div class="header-container">
+        <div class="header-top">
+
+            <!-- Header Language -->
+            <div class="col-xs-12 col-sm-6">
+                <div class="welcome-msg">Welcome to Seven Wealth！</div>
+                <div class="dropdown jtv-language-box"><a role="button" data-toggle="dropdown" data-target="#"
+                                                          class="block-language dropdown-toggle" href="#"> <img
+                        src="images/flag-english.jpg" alt="language"> English <span class="caret"></span> </a>
+
+                </div>
+                <!-- End Header Language -->
+
+                <!-- Header Currency -->
+                <div class="dropdown jtv-currency-box"><a role="button" data-toggle="dropdown" data-target="#"
+                                                          class="block-currency dropdown-toggle" href="#"> USD <span
+                        class="caret"></span></a>
+
+                </div>
+                <!-- End Header Currency -->
+
+            </div>
+            <div class="col-xs-6">
+                <!-- Header Top Links -->
+                <div class="jtv-top-links">
+                    <div class="links">
+                        <ul>
+                            <li><a title="My Account" href="#"><span class="">我的账户</span></a></li>
+                            <li><a title="Wishlist" href="#">我的关注</a></li>
+                            <li><a title="Checkout" href="#"><span class="">登陆</span></a></li>
+                            <!--<li>-->
+                            <!--<div class="dropdown block-company-wrapper "><a role="button" data-toggle="dropdown"-->
+                            <!--data-target="#"-->
+                            <!--class="block-company dropdown-toggle"-->
+                            <!--href="#"> More <span-->
+                            <!--class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li>-->
+                            <!--<a href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/about_us.html">-->
+                            <!--About Us </a></li>-->
+                            <!--<li><a href="#"> Customer Service </a></li>-->
+                            <!--<li><a href="#"> Privacy Policy </a></li>-->
+                            <!--<li><a href="#">Site Map </a></li>-->
+                            <!--<li><a href="#">Search Terms </a></li>-->
+                            <!--<li><a href="#">Advanced Search </a></li>-->
+                            <!--</ul>-->
+                            <!--</div>-->
+                            <!--</li>-->
+                            <!--<li><a href="#"><span class="">Log In</span></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Header Top Links -->
+            </div>
+
+        </div>
+        <div style="width: 1200px;margin:0 auto; display: flex; align-items: center;">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <div class="jtv-top-cart-box">
+                    <!-- Top Cart -->
+                    <div class="mini-cart">
+                        <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle"><a
+                                href="#"> <span
+                                class="cart_count">2</span><span class="price">服务进行中</span> </a></div>
+                        <!--<div>-->
+                        <!--<div class="jtv-top-cart-content">-->
+
+                        <!--&lt;!&ndash;block-subtitle&ndash;&gt;-->
+                        <!--<ul class="mini-products-list" id="cart-sidebar">-->
+                        <!--<li class="item first">-->
+                        <!--<div class="item-inner"><a class="product-image" title="Product Title Here"-->
+                        <!--href="single_product.html"><img-->
+                        <!--alt="Product Title Here"-->
+                        <!--src="images/products/img01.jpg">-->
+                        <!--</a>-->
+                        <!--<div class="product-details">-->
+                        <!--<div class="access"><a class="jtv-btn-remove" title="Remove This Item"-->
+                        <!--href="#">Remove</a> <a class="btn-edit"-->
+                        <!--title="Edit item"-->
+                        <!--href="#"><i-->
+                        <!--class="icon-pencil"></i><span-->
+                        <!--class="hidden">Edit item</span></a>-->
+                        <!--</div>-->
+                        <!--<p class="product-name"><a href="#">Product Title Here</a></p>-->
+                        <!--<strong>1</strong> x <span class="price"></span></div>-->
+                        <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="item">-->
+                        <!--<div class="item-inner"><a class="product-image" title="Product Title Here"-->
+                        <!--href="single_product.html"><img-->
+                        <!--alt="Product Title Here"-->
+                        <!--src="images/products/img02.jpg">-->
+                        <!--</a>-->
+                        <!--<div class="product-details">-->
+                        <!--<div class="access"><a class="jtv-btn-remove" title="Remove This Item"-->
+                        <!--href="#">Remove</a> <a class="btn-edit"-->
+                        <!--title="Edit item"-->
+                        <!--href="#"><i-->
+                        <!--class="icon-pencil"></i><span-->
+                        <!--class="hidden">Edit item</span></a>-->
+                        <!--</div>-->
+                        <!--<p class="product-name"><a href="#">Product Title Here</a></p>-->
+                        <!--<strong>1</strong> x <span class="price"></span></div>-->
+                        <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="item last">-->
+                        <!--<div class="item-inner"><a class="product-image" title="Product Title Here"-->
+                        <!--href="single_product.html"><img-->
+                        <!--alt="Product Title Here"-->
+                        <!--src="images/products/img04.jpg">-->
+                        <!--</a>-->
+                        <!--<div class="product-details">-->
+                        <!--<div class="access"><a class="jtv-btn-remove" title="Remove This Item"-->
+                        <!--href="#">Remove</a> <a class="btn-edit"-->
+                        <!--title="Edit item"-->
+                        <!--href="#"><i-->
+                        <!--class="icon-pencil"></i><span-->
+                        <!--class="hidden">Edit item</span></a>-->
+                        <!--</div>-->
+                        <!--<p class="product-name"><a href="#">Product Title Here</a></p>-->
+                        <!--<strong>1</strong> x <span class="price"></span></div>-->
+                        <!--</div>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+
+                        <!--&lt;!&ndash;actions&ndash;&gt;-->
+                        <!--<div class="actions">-->
+                        <!--<button class="btn-checkout" title="Checkout" type="button" onClick="#">-->
+                        <!--<span>Checkout</span></button>-->
+                        <!--<a href="#" class="view-cart"><span>View Cart</span></a></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12 jtv-logo-box">
+                <!-- Header Logo -->
+                <div class="logo"><h1><a title="eCommerce" href="index.html"><img alt="eCommerce" src="images/logo.png">
+                </a></h1></div>
+                <!-- End Header Logo -->
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 ">
+                <div class="search-box">
+                    <form action="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/cat" method="POST"
+                          id="search_mini_form" name="Categories">
+                        <input type="text" placeholder="搜索" value="" maxlength="70" name="search"
+                               id="search">
+                        <button type="button" class="search-btn-bg"><span class="glyphicon glyphicon-search"></span>&nbsp;
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- Navigation -->
+<nav>
+
+    <div class="nav-inner">
+        <!-- BEGIN NAV -->
+        <ul id="nav" class="">
+            <li class="drop-menu a"><a href="index.html" class="level-top active"><span>全部产品导航</span></a>
+                <div class="banner1_wrap">
+                    <div class="banner1" style="width: 230px;">
+                        <ul class="banner1_left">
+                            <li class="second_menu1 second_menu">
+                                <div class="second_menu1_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">企业工商服务</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">快人一步！即刻拥有自己的公司</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">公司注册</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">内资公司注册</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">外资公司注册</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">股份公司注册</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">有限合伙公司注册</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">个人独资企业注册</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">行政许可</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">进出口权</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">食品经营</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">劳务派遣</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">人力资源许可证</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">医疗器械</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">ICP经营许可</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">环评</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">公司变更</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">公司服权变更</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">地址变更</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">注册资本变更</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">公司转让</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">公司注销</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="https://www.huisuanzhang.com/gongshang.html" target="_blank"><p
+                                            class="second_menu_right_title" style="color: white;line-height: 80px;
+    margin: 0;">开设公司</p></a>
+
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left1.png" alt="开公司图标"
+                                         class="second_menu_left1">
+                                </div>
+                            </li>
+                            <li class="second_menu2 second_menu">
+                                <div class="second_menu2_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">代理记账</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">中小企业的专业选择、代账周期越长优惠越多</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">代理记账</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">清理乱涨</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">出口退税</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">税务异常处理</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">税收策划</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">个人节税包</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">企业节税包</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">公司服权架构设计</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="https://www.huisuanzhang.com/account.html" target="_blank"><p
+                                            class="second_menu_right_title" style="color: white;line-height: 80px;
+    margin: 0;">财税服务</p></a>
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left2.png" alt="代理记账图标"
+                                         class="second_menu_left2">
+                                </div>
+                            </li>
+                            <li class="second_menu3 second_menu">
+                                <div class="second_menu3_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">企业服务</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">低价高质！让您的企业体验真正的互联网模式</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">社保代缴</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">企业社保外包</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">个人社保外包</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">劳务派遣</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">岗位外包</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">代发工资</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">零散用工</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="index.html" target="_blank"><p class="second_menu_right_title"
+                                                                            style="color: white;line-height: 80px;
+    margin: 0;">人事社保</p></a>
+
+
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left3.png" alt="增值服务图标"
+                                         class="second_menu_left3">
+                                </div>
+                            </li>
+                            <li class="second_menu4 second_menu">
+                                <div class="second_menu4_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">企业服务</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">低价高质！让您的企业体验真正的互联网模式</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">企业法律顾问</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">企业法律顾问</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">拟审合同</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">拟审合同</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">找律师打官司</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">找律师打官司</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="javascript:void(0);" target="_blank"><p class="second_menu_right_title"
+                                                                                     style="color: white;line-height: 80px;
+    margin: 0;">法律服务</p></a>
+
+
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left4.png" alt="增值服务图标"
+                                         class="second_menu_left4">
+                                </div>
+                            </li>
+                            <li class="second_menu5 second_menu">
+                                <div class="second_menu5_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">企业服务</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">低价高质！让您的企业体验真正的互联网模式</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">商标注册</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">国外商标注册</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">专利申请</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">软件普作</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="javascript:void(0);" target="_blank"><p class="second_menu_right_title"
+                                                                                     style="line-height: 80px;
+    margin: 0;color: white;">知识产权</p></a>
+
+
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left3.png" alt="增值服务图标"
+                                         class="second_menu_left3">
+                                </div>
+                            </li>
+                            <li class="second_menu6 second_menu">
+                                <div class="second_menu6_1 second_menus" style="display: none;">
+                                    <span class="color1"></span>
+                                    <span class="banner1_middle_title">企业服务</span>
+                                    <span class="color2"></span>
+                                    <span class="banner1_middle_title_introduce">低价高质！让您的企业体验真正的互联网模式</span>
+                                    <ul class="second_menu_lists">
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">抵押贷款</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">按揭房贷款</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">汽车抵押贷款</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="second_menu_list second_menu_list1">
+                                            <a href="" target="_blank">
+                                                <span class="second_menu_list_name">信用贷款</span>
+                                            </a>
+                                            <ul class="second_menu_listsSon">
+                                                <li class="second_menu_listsSon1"><a href="">个人信用贷款</a></li>
+                                                <li class="second_menu_listsSon1"><a href="">企业信用贷款</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="second_menu_right" style="cursor: pointer;">
+                                    <a href="javascript:void(0);" target="_blank"><p class="second_menu_right_title"
+                                                                                     style="line-height: 80px;
+    margin: 0;color: white;">金融服务</p></a>
+
+
+                                </div>
+                                <div class="second_menu_left">
+                                    <img src="./images/second_menu_left3.png" alt="增值服务图标"
+                                         class="second_menu_left3">
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="drop-menu"><a href="" class="level-top"> <span>首页</span></a></li>
+            <li class="mega-menu"><a class="level-top" href="single_productList.html"><span>人事社保</span></a></li>
+            <li class="mega-menu"><a class="level-top" href="single_productList.html"><span>财税服务</span></a></li>
+            <li class="mega-menu"><a class="level-top" href="blog.html"><span>企业动态</span></a></li>
+            <li class="mega-menu"><a class="level-top" href="about.html"><span>关于我们</span></a></li>
+            <!--<li class="mega-menu"><a class="level-top" href="shop_grid.html"><span>Drinks</span></a></li>-->
+            <!--<li class="mega-menu"><a class="level-top" href="#"><span>Blog</span></a></li>-->
+            <li class="nav-custom-link mega-menu"><a class="level-top" href="javascript:;"><i
+                    class="iconfont">&#xe60f;</i> <span>客服热线：400-888-8888</span> </a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        var a = document.querySelector(".a"),
+            b = document.querySelector(".banner1_wrap");
+        a.onmouseover = function () {
+            b.style.display = "block";
+
+        }
+        a.onmouseout = function () {
+            b.style.display = 'none';
+        }
+        b.onmouseout = function () {
+            b.style.display = 'none';
+        }
+
+    </script>
+
+
+</nav>
+<!-- end nav -->
+
+<!-- our features -->
+<div class="our-features-boxBox" style="width: 100%;background: #f2f2f2;">
+    <div class="our-features-box ">
+
+        <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="feature-box first"><i class="icon-plane icons"></i>
+                <div class="content">
+                    <h6>为客户提供全行业支持服务</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="feature-box"><i class="icon-earphones-alt icons"></i>
+                <div class="content">
+                    <h6>为客户提供全天17小时支持服务</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="feature-box"><i class="icon-like icons"></i>
+                <div class="content">
+                    <h6>95%客户满意认可度</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="feature-box last"><i class="icon-tag icons"></i>
+                <div class="content">
+                    <h6>为行业提供标准化服务</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- JTV Home Slider -->
+<div class="jtv-slideshow">
+
+    <!--轮播-->
+
+    <div class="header-frame">
+        <div class="el-carousel swiper-container">
+            <div class="el-carousel__container swiper-wrapper" style="height:464px;"><!----><!---->
+                <div class="el-carousel__item is-animating swiper-slide"><!---->
+                    <img src="images/banner_swiper1.jpg" alt="">
+                </div>
+                <div class="el-carousel__item is-animating swiper-slide"><!---->
+                    <img src="images/banner_swiper2.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="search-form-main">
+            <div class="search-form">
+            <span>
+                <div class="cs-common-city-selected el-input el-input--suffix cs-select-citylist"
+                     aria-describedby="el-popover-5050" tabindex="0"><!---->
+                    <input type="text" readonly="readonly" autocomplete="off" placeholder="选择城市" value="苏州市"
+                           class="el-input__inner" id="city">
+
+
+                    <script type="text/javascript">
+                        $("#city").click(function (e) {
+                            SelCity(this, e);
+                            console.log("inout", $(this).val(), new Date())
+                        });
+                    </script>
+
+
+
+                    <span class="el-input__suffix"><span class="el-input__suffix-inner">
+                        <i class="iconfont">&#xe612;</i>
+                    </span></span>
+                </div>
+            </span>
+                <input type="text" placeholder="请输入你要查询的公司名称" value="" class="search-box ph-input">
+                <a class="search-btn">一键核名</a></div>
+        </div>
+    </div>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination'
+            }
+
+        })
+    </script>
+
+</div>
+<!-- jtv bottom banner section -->
+<div class="jtv-bottom-banner-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="jtv-img-box">
+                    <!--<a href="#">-->
+                    <div class="jtv-banner-info one">
+                        <img src="images/jtv-banner-info1.png" alt="">
+                        <span>Establish a company</span>
+                        <h3>开设公司</h3>
+                    </div>
+                    <!--</a>-->
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="jtv-img-box">
+                    <a href="#">
+                        <div class="jtv-banner-info two">
+                            <img src="images/jtv-banner-info2.png" alt="">
+                            <span>finance and taxation</span>
+                            <h3>财税服务</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="jtv-img-box">
+                    <a href="#">
+                        <div class="jtv-banner-info three">
+                            <img src="images/jtv-banner-info3.png" alt="">
+                            <span>Personnel and social security</span>
+                            <h3>人事社保</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- Special Product slider -->
+<div class="jtv-fuwu">
+    <div class="jtv-fuwuLeft">
+        <img src="images/jtv-fuwuLeft.png" alt="">
+        <h3>优质服务</h3>
+        <p>优质服务简介优质服务简介优质服务简介优质服务简介，优质服务简介优质服务简介优质服务简介优质服务简介优质服务。简介优质服务简介优</p>
+    </div>
+    <div class="jtv-fuwuRight">
+        <div class="jtv-fuwuRight-Box col-md-4">
+            <h5>服务名称</h5>
+            <div><img src="images/fuwuxingji.png" alt=""></div>
+            <p>服务说明服务说明服务说明</p>
+            <span>￥3000</span>
+            <div class="jtv-fuwuRight-BoxButton">
+                <a href="AgentBookkeepingList.html">查看</a>
+            </div>
+        </div>
+        <div class="jtv-fuwuRight-Box col-md-4">
+            <h5>服务名称</h5>
+            <div><img src="images/fuwuxingji.png" alt=""></div>
+            <p>服务说明服务说明服务说明</p>
+            <span>￥3000</span>
+            <div class="jtv-fuwuRight-BoxButton">
+                <a href="CompanyChangesList.html">查看</a>
+            </div>
+        </div>
+        <div class="jtv-fuwuRight-Box col-md-4">
+            <h5>服务名称</h5>
+            <div><img src="images/fuwuxingji.png" alt=""></div>
+            <p>服务说明服务说明服务说明</p>
+            <span>￥3000</span>
+            <div class="jtv-fuwuRight-BoxButton">
+                <a href="InternalAndForeignList.html">查看</a>
+            </div>
+        </div>
+        <div class="jtv-fuwuRight-Box col-md-4">
+            <h5>服务名称</h5>
+            <div><img src="images/fuwuxingji.png" alt=""></div>
+            <p>服务说明服务说明服务说明</p>
+            <span>￥3000</span>
+            <div class="jtv-fuwuRight-BoxButton">
+                <a href="OperatingLicenseList.html">查看</a>
+            </div>
+        </div>
+        <div class="jtv-fuwuRight-Box col-md-4">
+            <h5>服务名称</h5>
+            <div><img src="images/fuwuxingji.png" alt=""></div>
+            <p>服务说明服务说明服务说明</p>
+            <span>￥3000</span>
+            <div class="jtv-fuwuRight-BoxButton">
+                <a href="TaxPlanningList.html">查看</a>
+            </div>
+        </div>
+        <div class="jtv-fuwuRight-Box col-md-4">
+            <h5>服务名称</h5>
+            <div><img src="images/fuwuxingji.png" alt=""></div>
+            <p>服务说明服务说明服务说明</p>
+            <span>￥3000</span>
+            <div class="jtv-fuwuRight-BoxButton">
+                <a href="TrademarkList.html">查看</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--snumber滚动Start-->
+<div class="why-choose choose-bg">
+    <div class="choose-main">
+        <div class="chose" style="background:url('./images/snumber.jpg')">
+            <div class="chose-txt"><p>为什么<br>选择七财？</p></div>
+            <div class="chose-cont-01 bor-right-style1">
+                <h2 data-speed="1500" data-from="0" data-to="22" data-decimals="0" class="textd timer">22</h2>
+                <p>年专注财税服务<img src="./images/why-txt-01.png" data-bd-imgshare-binded="1"></p>
+            </div>
+
+            <div class="chose-cont-01 bor-right-style1">
+                <h2><span data-speed="1500" data-from="0" data-to="20000" data-decimals="0"
+                          class="textd timer">20000</span>+</h2>
+                <p>企业客户服务经验<img src="./images/why-txt-01.png" data-bd-imgshare-binded="1"></p>
+            </div>
+            <div class="chose-cont-02 bor-right-style1">
+                <h2 data-speed="1500" data-from="0" data-to="3500" data-decimals="0" class="textd timer">3500</h2>
+                <p>高新企业认定<img src="./images/why-txt-01.png" data-bd-imgshare-binded="1"></p>
+            </div>
+            <div class="chose-cont-01">
+                <h2 data-speed="1500" data-from="0" data-to="18" data-decimals="0" class="textd timer">18</h2>
+                <p>全国服务分支机构<img src="./images/why-txt-01.png" data-bd-imgshare-binded="1"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+
+
+            var needHeight = $(".why-choose").offset().top
+
+            var wintop = $(window).scrollTop();
+            if (wintop > needHeight) {
+                $('.timer').countTo();
+            }
+        });
+    });
+
+
+</script>
+<!--snumber滚动End-->
+
+
+<div class="content-page">
+
+    <!-- Product Tabs-->
+    <div class="category-product">
+        <div class="navbar nav-menu">
+            <div class="navbar-collapse">
+                <div class="jtv-title">
+                    <h3>财税外包</h3>
+                </div>
+                <div class="jtv-title" style="padding-bottom: 25px;">
+                    <h3 style="font-size: 18px;">为企业提供财务管理过程中的某些事项、模块、流程的代操作与执行等外包服务</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="jtv-top-banner">
+
+            <div class="imgbox"><img src="images/banner1.jpg" alt=""></div>
+            <div class="jtv-cont-box">
+                <h3>企业财务流程外包</h3>
+                <div class="jtv-line-bg"></div>
+                <p>会计核算外包,出纳外包</p>薪酬外包,费用报销外包</p>往来账款管理外包</p>
+            </div>
+            <div class="imgbox"><img src="images/banner2.jpg" alt=""></div>
+            <div class="jtv-cont-box2">
+                <h3>短期会计业务外包</h3>
+                <div class="jtv-line-bg"></div>
+                <p>会计租赁兼职会计,专业财务人员上门</p>3-6月短期灵活财务外包</p>孕期/假期等短期空缺顶岗,快速交接,无缝衔接</p>
+            </div>
+            <div class="imgbox"><img src="images/banner3.jpg" alt=""></div>
+            <div class="jtv-cont-box3">
+                <h3>财务总监外包</h3>
+                <div class="jtv-line-bg"></div>
+                <p>搭建面向战略的全面财务组织体系</p>企业内控体检,企业经营财务分析报告</p>上门财务咨询与管理建议,税收规划建议报告</p>
+            </div>
+
+        </div>
+
+
+        <div class="jtv-testimonial-block">
+
+            <div class="col-md-12" data-wow-delay="0.2s" style="margin-bottom:30px;">
+                <div class="block-title">
+                    <h3>我们的团队</h3>
+                </div>
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0"><img class="img-responsive "
+                                                                                 src="images/testimonials-img1.jpg"
+                                                                                 alt=""></li>
+                        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive"
+                                                                                 src="images/testimonials-img2.jpg"
+                                                                                 alt=""></li>
+                        <li data-target="#quote-carousel" data-slide-to="2" class="active"><img class="img-responsive"
+                                                                                                src="images/testimonials-img3.jpg"
+                                                                                                alt=""></li>
+                        <li data-target="#quote-carousel" data-slide-to="3"><img class="img-responsive"
+                                                                                 src="images/testimonials-img4.jpg"
+                                                                                 alt=""></li>
+                        <li data-target="#quote-carousel" data-slide-to="4"><img class="img-responsive"
+                                                                                 src="images/testimonials-img5.jpg"
+                                                                                 alt=""></li>
+                    </ol>
+
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner text-center">
+
+                        <!-- Quote 1 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>
+                                            人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介</p>
+                                        <div class="holder-info"><strong class="name">姓名</strong> <strong
+                                                class="designation">职位</strong></div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>
+                                            人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介</p>
+                                        <div class="holder-info"><strong class="name">姓名</strong> <strong
+                                                class="designation">职位</strong></div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item active">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>
+                                            人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介</p>
+                                        <div class="holder-info"><strong class="name">姓名</strong> <strong
+                                                class="designation">职位</strong></div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 4 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>
+                                            人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介</p>
+                                        <div class="holder-info"><strong class="name">Vince Roy</strong> <strong
+                                                class="designation">职位</strong></div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 5 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>
+                                            人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介人物简介</p>
+                                        <div class="holder-info"><strong class="name">姓名</strong> <strong
+                                                class="designation">职位</strong></div>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i
+                            class="fa fa-chevron-left"></i></a> <a data-slide="next" href="#quote-carousel"
+                                                                   class="right carousel-control"><i
+                        class="fa fa-chevron-right"></i></a></div>
+            </div>
+
+        </div>
+
+        <!-- Latest Blog -->
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="blog-outer-container">
+                <div class="jtv-title">
+                    <h3>企业动态</h3>
+                </div>
+                <div class="blog-inner">
+                    <div class="col-sm-4">
+                        <div class="entry-thumb"><a
+                                href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/blog_single_post.html"> <img
+                                alt="Blog" src="images/blog-img1.jpg"> </a></div>
+                        <div class="blog-preview_info">
+                            <h4><a href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/blog_single_post.html">新闻主标题</a>
+                            </h4>
+                            <ul class="post-meta">
+                                <li><i class="fa fa-user"></i><a href="#">发布者</a></li>
+                                <li><i class="fa fa-calendar"></i>2018-10-10</li>
+                            </ul>
+                            <div class="blog-preview_desc">
+                                新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介
+                            </div>
+                            <a class="blog-preview_btn"
+                               href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/blog_single_post.html">查看更多
+                                <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="entry-thumb"><a
+                                href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/blog_single_post.html"> <img
+                                alt="Blog" src="images/blog-img2.jpg"> </a></div>
+                        <div class="blog-preview_info">
+                            <h4><a href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/blog_single_post.html">新闻主标题</a>
+                            </h4>
+                            <ul class="post-meta">
+                                <li><i class="fa fa-user"></i><a href="#">发布者</a></li>
+                                <li><i class="fa fa-calendar"></i>2018-10-10</li>
+                            </ul>
+                            <div class="blog-preview_desc">
+                                新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介
+                            </div>
+                            <a class="blog-preview_btn"
+                               href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/blog_single_post.html">查看更多
+                                <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="entry-thumb"><a
+                                href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/blog_single_post.html"> <img
+                                alt="Blog" src="images/blog-img3.jpg"> </a></div>
+                        <div class="blog-preview_info">
+                            <h4><a href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/blog_single_post.html">新闻主标题</a>
+                            </h4>
+                            <ul class="post-meta">
+                                <li><i class="fa fa-user"></i><a href="#">发布者</a></li>
+                                <li><i class="fa fa-calendar"></i>2018-10-10</li>
+                            </ul>
+                            <div class="blog-preview_desc">
+                                新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介新闻内容简介
+                            </div>
+                            <a class="blog-preview_btn"
+                               href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/blog_single_post.html">查看更多
+                                <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- End Latest Blog -->
+
+        <!-- Brand Logo -->
+
+        <div class="brand-logo">
+
+            <div class="slider-items-products">
+                <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
+                    <div class="slider-items slider-width-col6">
+
+                        <!-- Item -->
+                        <div class="item"><a href="#"><img src="images/brand3.png" alt="Image"> </a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#"><img src="images/brand1.png" alt="Image"> </a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#"><img src="images/brand2.png" alt="Image"> </a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#"><img src="images/brand4.png" alt="Image"> </a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#"><img src="images/brand5.png" alt="Image"> </a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#"><img src="images/brand6.png" alt="Image"> </a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#"><img src="images/brand2.png" alt="Image"> </a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#"><img src="images/brand4.png" alt="Image"> </a></div>
+                        <!-- End Item -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-top">
+        <div class="footer-benefit w1200">
+            <ul class="footer-benefit-lists clearfix">
+                <li class="footer-benefit-list footer-benefit-list1 fl">
+                    <img class="fbi-img fl" src="images/benefit1_bg.png">
+                    <div class="fbi-wrap fl">
+                        <p class="p1">品质保证</p>
+                        <p class="p2">15年以上财税经验积累</p>
+                        <p class="p2">国内获IDG投资互联网财税企业</p>
+                    </div>
+                </li>
+                <li class="footer-benefit-list footer-benefit-list2 fl">
+                    <img class="fbi-img fl" src="images/benefit2_bg.png">
+                    <div class="fbi-wrap fl">
+                        <p class="p1">专业实力</p>
+                        <p class="p2">资深财税团队</p>
+                        <p class="p2">专业会计团队</p>
+                    </div>
+                </li>
+                <li class="footer-benefit-list footer-benefit-list3 fl">
+                    <img class="fbi-img fl" src="images/benefit3_bg.png">
+                    <div class="fbi-wrap fl">
+                        <p class="p1">安全无忧</p>
+                        <p class="p2">2048位顶级证书</p>
+                        <p class="p2">银行级别的安全</p>
+                    </div>
+                </li>
+                <li class="footer-benefit-list footer-benefit-list4 fl">
+                    <img class="fbi-img fl" src="images/benefit4_bg.png">
+                    <div class="fbi-wrap fl">
+                        <p class="p1">多元服务</p>
+                        <p class="p2">工商托管、税务代办</p>
+                        <p class="p2">财务规划和咨询等增值服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--<div style="text-align:center"><a href="index.html"><img src="images/footer-logo.png" alt="logo"> </a></div>-->
+        <!--<address>-->
+            <!--<p><i class="fa fa-map-marker"></i>江苏省苏州市姑苏区胥江路482号</p>-->
+            <!--<p><i class="fa fa-mobile"></i><span>+86-0512-88888888</span></p>-->
+            <!--<p><i class="fa fa-envelope"></i><span><a href="mailto:email@domain.com">sevenwealth@163.com</a></span></p>-->
+        <!--</address>-->
+
+    </div>
+    <div class="footer-inner">
+
+        <div class="col-sm-4 col-xs-12 col-md-4 footer-inner-one">
+            <div class="footer-links">
+                <h5>快捷导航</h5>
+                <ul class="links">
+                    <li><a href="TrademarkList.html" title="">》开设公司</a></li>
+                    <li><a href="TaxPlanningList.html" title="">》财税服务</a></li>
+                    <li><a href="AgentBookkeepingList.html" title="">》人事社保</a></li>
+                    <li><a href="OperatingLicenseList.html" title="">》法律服务</a></li>
+                    <li><a href="CompanyChangesList.html" title="">》知识产权</a></li>
+                    <li><a href="InternalAndForeignList.html" title="">》金融服务</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>关于我们</h5>
+                <ul class="links">
+                    <li><a href="about.html">公司简介</a></li>
+                    <li><a href="single.html">联系我们</a></li>
+                    <li><a href="single.html">商务合作</a></li>
+                    <li><a href="single.html">招贤纳士</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>新手指南</h5>
+                <ul class="links">
+                    <li><a href="#">在线咨询</a></li>
+                    <!--<li><a href="single.html">新手注册</a></li>-->
+                    <li><a href="#">财税咨询</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-xs-12 col-md-4 footer-inner-two">
+            <div class="footer-links">
+                <h5>企业公众号</h5>
+                <ul class="links">
+                    <img src="images/erweima.png" alt="">
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>企业公众号</h5>
+                <ul class="links">
+                    <img src="images/erweima.png" alt="">
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-sm-4 col-xs-12 col-md-4 footer-inner-three">
+            <div class="footer-inner-three-Box">
+                <div class="footer-inner-three-BoxLeft"><img src="images/footer-dianhua.png" alt=""></div>
+                <div  class="footer-inner-three-BoxRight">
+                    <p>123-456-0123</p>
+                    <p>全国咨询热线</p>
+                </div>
+            </div>
+            <div class="footer-inner-three-Box">
+                <div class="footer-inner-three-BoxLeft"><img src="images/footer-erji.png" alt=""></div>
+                <div  class="footer-inner-three-BoxRight">
+                    <p>123-456-1234</p>
+                    <p>全国服务热线</p>
+                </div>
+            </div>
+            <div class="footer-inner-three-Box">
+                <div class="footer-inner-three-BoxLeft"><img src="images/footer-shijian.png" alt=""></div>
+                <div  class="footer-inner-three-BoxRight">
+                    <p>9:00-18:00</p>
+                    <p>即时服务</p>
+                </div>
+            </div>
+        </div>
+        <!--<div class="col-xs-12 col-sm-12 col-md-4">-->
+        <!--<div class="footer-links">-->
+        <!--<div class="footer-newsletter">-->
+        <!--<h5>意见反馈</h5>-->
+        <!--<form id="newsletter-validate-detail" method="post" action="#">-->
+        <!--<div class="newsletter-inner">-->
+
+        <!--<textarea class="newsletter-email" name='Email' placeholder='Enter Your Email'></textarea>-->
+        <!--<button class="button subscribe" type="submit" title="Subscribe">发送</button>-->
+        <!--</div>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--<div class="" id="share-2">-->
+        <!--<h5>分享到：</h5>-->
+
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+    </div>
+    <div class="footer-bottom">
+        <div style="width:1200px;margin:0 auto;">
+            <div class="col-sm-5 col-xs-12 coppyright">备案号@qw1234142531 版权所有：七财 技术支持：华宸科技</div>
+            <div class="col-sm-7 col-xs-12 payment-accept">
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+<!--<script>-->
+    <!--$('#share-2').share({sites: ['qq', 'weibo', 'wechat']});-->
+<!--</script>-->
+
+<!--bannertanchengstart-->
+<script>
+    let aaaa = document.querySelector(".search-btn");
+    let bbbb = document.querySelector(".el-dialog");
+    let cccc = document.querySelector(".el-dialog__headerbtn");
+    aaaa.onclick = function () {
+        bbbb.style.display = "block";
+    }
+    cccc.onclick = function () {
+        bbbb.style.display = "none";
+    }
+</script>
+<!--bannertanchnagend-->
+
+
+<!-- bootstrap js -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- owl.carousel.min js -->
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+<!-- jtv-jtv-mobile-menu js -->
+<script type="text/javascript" src="js/jtv-mobile-menu.js"></script>
+
+<!-- countdown js -->
+<script type="text/javascript" src="js/countdown.js"></script>
+
+<!-- main js -->
+<script type="text/javascript" src="js/main.js"></script>
+
+<!-- rev-slider js -->
+<script type="text/javascript" src="js/rev-slider.js"></script>
+
+<!--Start JQuery-->
+<script type='text/javascript'>
+    jQuery(document).ready(function () {
+        jQuery('#jtv-rev_slider').show().revolution({
+            dottedOverlay: 'none',
+            delay: 5000,
+            startwidth: 1140,
+            startheight: 500,
+            hideThumbs: 200,
+            thumbWidth: 200,
+            thumbHeight: 50,
+            thumbAmount: 2,
+            navigationType: 'thumb',
+            navigationArrows: 'solo',
+            navigationStyle: 'round',
+            touchenabled: 'on',
+            onHoverStop: 'on',
+            swipe_velocity: 0.7,
+            swipe_min_touches: 1,
+            swipe_max_touches: 1,
+            drag_block_vertical: false,
+            spinner: 'spinner0',
+            keyboardNavigation: 'off',
+            navigationHAlign: 'center',
+            navigationVAlign: 'bottom',
+            navigationHOffset: 0,
+            navigationVOffset: 20,
+            soloArrowLeftHalign: 'left',
+            soloArrowLeftValign: 'center',
+            soloArrowLeftHOffset: 20,
+            soloArrowLeftVOffset: 0,
+            soloArrowRightHalign: 'right',
+            soloArrowRightValign: 'center',
+            soloArrowRightHOffset: 20,
+            soloArrowRightVOffset: 0,
+            shadow: 0,
+            fullWidth: 'on',
+            fullScreen: 'off',
+            stopLoop: 'off',
+            stopAfterLoops: -1,
+            stopAtSlide: -1,
+            shuffle: 'off',
+            autoHeight: 'off',
+            forceFullWidth: 'on',
+            fullScreenAlignForce: 'off',
+            minFullScreenHeight: 0,
+            hideNavDelayOnMobile: 1500,
+            hideThumbsOnMobile: 'off',
+            hideBulletsOnMobile: 'off',
+            hideArrowsOnMobile: 'off',
+            hideThumbsUnderResolution: 0,
+            hideSliderAtLimit: 0,
+            hideCaptionAtLimit: 0,
+            hideAllCaptionAtLilmit: 0,
+            startWithSlide: 0,
+            fullScreenOffsetContainer: ''
+        });
+    });
+</script>
+<!--End JQuery-->
+
+<!-- Hot Deals Timer 1-->
+<script type="text/javascript">
+    var dthen1 = new Date("12/25/17 11:59:00 PM");
+    start = "08/04/15 03:02:11 AM";
+    start_date = Date.parse(start);
+    var dnow1 = new Date(start_date);
+    if (CountStepper > 0)
+        ddiff = new Date((dnow1) - (dthen1));
+    else
+        ddiff = new Date((dthen1) - (dnow1));
+    gsecs1 = Math.floor(ddiff.valueOf() / 1000);
+
+    var iid1 = "countbox_1";
+    CountBack_slider(gsecs1, "countbox_1", 1);
+</script>
+
+<!--Newsletter Popup Start-->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog newsletter-popup">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="modal-body">
+                <h4 class="modal-title">NEWSLETTER SIGNUP</h4>
+                <form id="newsletter-form" method="post" action="#">
+                    <div class="content-subscribe">
+                        <div class="form-subscribe-header">
+                            <label>Subscribe to be the first to know about Sales, Events, and Exclusive Offers!</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="input-text newsletter-subscribe"
+                                   title="Sign up for our newsletter" name="email"
+                                   placeholder="Enter your email address">
+                        </div>
+                        <div class="actions">
+                            <button class="button-subscribe" title="Subscribe" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="subscribe-bottom">
+                    <input name="notshowpopup" id="notshowpopup" type="checkbox">
+                    Don’t show this popup again
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

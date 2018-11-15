@@ -1,0 +1,342 @@
+@CHARSET "UTF-8";
+/* 产品详情页表单 */
+#jms-product-form{
+    width: 500px;
+    height: 522px;
+    position: fixed;
+    top: 10%;
+    display: none;
+    z-index: 999;
+}
+#jms-product-form .title_wrap{
+    width: 500px;
+    height: 100px;
+    background: #28a8e0;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+}
+#jms-product-form .title_wrap .title{
+    width: 270px;
+    height: 60px;
+    font-size: 0;
+    margin: 0 auto;
+}
+#jms-product-form .title_wrap .title .line{
+    width: 20px;
+    height: 1px;
+    margin-top: 34.5px;
+    background: white;
+}
+#jms-product-form .title_wrap .title .line_left{
+    float: left;
+}
+#jms-product-form .title_wrap .title .line_right{
+    float: right;
+}
+#jms-product-form .title_wrap .title span{
+    font: 18px/70px "微软雅黑";
+    color: white;
+    margin-left: 12px;
+}
+#jms-product-form .title_wrap img{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+/*//////////////////////////////////////////////////*/
+#jms-product-form form{
+    width: 500px;
+    height: 392px;
+}
+#jms-product-form form ul{
+    font-size: 0;
+    padding-top: 30px;
+    background: white;
+}
+#jms-product-form form ul li{
+    height: 40px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#jms-product-form form ul li span{
+    font: 14px/40px "微软雅黑";
+    color: #222;
+    text-align: right;
+    margin: 0 10px 0 30px;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    vertical-align: middle;
+}
+#formCityMock6_1{
+    width: 64px;
+    height: 38px;
+    position: absolute;
+    top: 0;
+    left: 110px;
+    font: 14px/38px "微软雅黑";
+    color: #222;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #fff;
+    border: 1px solid #f4f4f4;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+}
+#formCityMock6_2{
+    width: 64px;
+    height: 38px;
+    position: absolute;
+    top: 0;
+    left: 233px;
+    font: 14px/38px "微软雅黑";
+    color: #222;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #fff;
+    border: 1px solid #f4f4f4;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+}
+#formCityMock6_3{
+    width: 64px;
+    height: 38px;
+    position: absolute;
+    top: 0;
+    left: 356px;
+    font: 14px/38px "微软雅黑";
+    color: #222;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #fff;
+    border: 1px solid #f4f4f4;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+}
+#jms-product-form form ul li select{
+    -webkit-appearance: none;
+    outline: none;
+    width: 117px;
+    height: 40px;
+    font: 14px/38px "微软雅黑";
+    color: #222;
+    border: 1px solid #f4f4f4;
+    padding: 0 41px 0 10px;
+    vertical-align: middle;
+}
+#jms-product-form form ul li select:nth-child(5){
+    margin: 0 6px;
+}
+
+#jms-product-form form ul li input{
+    outline: none;
+    width: 341px;
+    height: 38px;
+    font: 14px/38px "微软雅黑";
+    color: #222;
+    border: 1px solid #f4f4f4;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+#jms-product-form form ul li .prompt{
+    position: absolute;
+    top: 0;
+    right: 105px;
+    margin: 0;
+    padding: 0;
+    font: 14px/40px "微软雅黑";
+    color: #ff0000;
+    text-align: left;
+    width: 77px;
+}
+#jms-product-form form ul li .prompt1{
+    right: 145px;
+}
+#jms-product-form form ul li .contacts_name{
+    width: 138px;
+}
+#jms-product-form form ul li .circle_out{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    top: 9px;
+    left: 285px;
+}
+#jms-product-form form ul li .circle_out1{
+    background: #28a8e0;
+}
+#jms-product-form form ul li .circle_out2{
+    left: 373px;
+    background: #989898;
+}
+#jms-product-form form ul li .circle_inner{
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+#jms-product-form form ul .btn_wrap{
+    width: 500px;
+    height: 80px;
+    background: white;
+    font: 18px/40px "微软雅黑";
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#jms-product-form form ul li .person{
+    height: 28px;
+    width: 32px;
+    font: 16px/16px "微软雅黑";
+    color: #999;
+    margin: 0 2px 0 54px;
+    padding-top: 12px;
+    vertical-align: middle;
+}
+#jms-product-form form ul .auth-name {
+	float: left;
+	font-size: 14px;
+	line-height: 40px;
+	font-family: "微软雅黑";
+	color: #222;
+	margin: 0 10px 0 45px;
+}
+#jms-product-form form ul #auth-code {
+	width: 255px;
+	height: 38px;
+	font: 14px/38px "微软雅黑";
+	color: #222;
+	border: 1px solid #f4f4f4;
+    vertical-align: middle;
+	text-align: left;
+	padding-left: 20px;
+	box-sizing: border-box;
+	outline: none;
+	display: block;
+	float: left;
+}
+#jms-product-form form ul .get-code {
+	width: 106px;
+	height: 38px;
+	border: none;
+	vertical-align: middle;
+	outline: none;
+	background: #26a6ff;
+	color: #fff;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	display: block;
+	float: left;
+}
+#jms-product-form form ul .btn{
+    width: 284px;
+    height: 40px;
+    margin: 0 auto;
+    background: #28a8e0;
+    border-radius: 6px;
+}
+#province66,#city66,#area66{
+    background: 80px 14px no-repeat url("../../images/jms_product_details_imgs/join_us_pull_icon.png") ;
+}
+
+#jms-product-form .title_p {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* 弹出二维码样式开始 */
+.quickMark_wrap {
+    display: none;
+	width: 500px;
+	height: 450px;
+	position: fixed;
+	top: 10%;
+    z-index: 999;
+}
+
+.quickMark_top {
+	width: 500px;
+	height: 70px;
+	background: #28a7e1;
+    border-radius: 8px 8px 0 0;
+}
+.quickMark_middle{
+    padding: 60px 0 32px;
+}
+.quickMark_bottom{
+    padding: 0 0 40px;
+}
+.quickMark_middle,.quickMark_bottom{
+    background: white;
+}
+.quickMark_top .correct_logo,.correct_logo_text {
+	float: left;
+}
+
+.quickMark_top .close_logo {
+	float: right;
+	margin-right: 20px;
+	margin-top: 23.5px;
+}
+
+.quickMark_top .correct_logo {
+	margin-left: 20px;
+	margin-top: 13.5px;
+}
+
+.quickMark_top .correct_logo_text {
+	margin-left: 21px;
+}
+
+.quickMark_top .correct_logo_text .p1 {
+	font-size: 18px;
+	color: #fff;
+	margin-top: 16px;
+}
+
+.quickMark_top .correct_logo_text .p2 {
+	font-size: 14px;
+	color: #fff;
+	margin-top: 8px;
+}
+
+.quickMark_middle .quickMark_logo {
+	margin-left: 162px;
+}
+
+.quickMark_middle .details {
+	font-size: 16px;
+	color: #222;
+	margin-top: 14px;
+	text-align: center;
+}
+
+.quickMark_bottom .button {
+	width: 284px;
+	height: 40px;
+	border-radius: 6px;
+	background: #28a7e1;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	line-height: 40px;
+	margin: 0 auto;
+}
+/* 弹出二维码样式开始 */
