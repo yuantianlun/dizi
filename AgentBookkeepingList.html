@@ -18,7 +18,241 @@
     <script src="./js/jquery.min.js" type="text/ecmascript"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/second_menu.js" type="text/ecmascript"></script>
+    <!--三级联动 js-->
+    <!--<script src="./js/jquery-1.11.3.min.js"></script>-->
+    <script src="./js/Popt.js"></script>
+    <script src="./js/cityJson.js"></script>
+    <script src="./js/citySet.js"></script>
 
+
+    <style type="text/css">
+        #yddContainer {
+            display: block;
+            font-family: Microsoft YaHei;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            top: -4px;
+            left: -4px;
+            font-size: 12px;
+            border: 1px solid
+        }
+
+        #yddTop {
+            display: block;
+            height: 22px
+        }
+
+        #yddTopBorderlr {
+            display: block;
+            position: static;
+            height: 17px;
+            padding: 2px 28px;
+            line-height: 17px;
+            font-size: 12px;
+            color: #5079bb;
+            font-weight: bold;
+            border-style: none solid;
+            border-width: 1px
+        }
+
+        #yddTopBorderlr .ydd-sp {
+            position: absolute;
+            top: 2px;
+            height: 0;
+            overflow: hidden
+        }
+
+        .ydd-icon {
+            left: 5px;
+            width: 17px;
+            padding: 0px 0px 0px 0px;
+            padding-top: 17px;
+            background-position: -16px -44px
+        }
+
+        .ydd-close {
+            right: 5px;
+            width: 16px;
+            padding-top: 16px;
+            background-position: left -44px
+        }
+
+        #yddKeyTitle {
+            float: left;
+            text-decoration: none
+        }
+
+        #yddMiddle {
+            display: block;
+            margin-bottom: 10px
+        }
+
+        .ydd-tabs {
+            display: block;
+            margin: 5px 0;
+            padding: 0 5px;
+            height: 18px;
+            border-bottom: 1px solid
+        }
+
+        .ydd-tab {
+            display: block;
+            float: left;
+            height: 18px;
+            margin: 0 5px -1px 0;
+            padding: 0 4px;
+            line-height: 18px;
+            border: 1px solid;
+            border-bottom: none
+        }
+
+        .ydd-trans-container {
+            display: block;
+            line-height: 160%
+        }
+
+        .ydd-trans-container a {
+            text-decoration: none;
+        }
+
+        #yddBottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 22px;
+            line-height: 22px;
+            overflow: hidden;
+            background-position: left -22px
+        }
+
+        .ydd-padding010 {
+            padding: 0 10px
+        }
+
+        #yddWrapper {
+            color: #252525;
+            z-index: 10001;
+            /*background: url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);*/
+        }
+
+        #yddContainer {
+            background: #fff;
+            border-color: #4b7598
+        }
+
+        #yddTopBorderlr {
+            border-color: #f0f8fc
+        }
+
+        #yddWrapper .ydd-sp {
+            /*background-image: url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)*/
+        }
+
+        #yddWrapper a, #yddWrapper a:hover, #yddWrapper a:visited {
+            color: #50799b
+        }
+
+        #yddWrapper .ydd-tabs {
+            color: #959595
+        }
+
+        .ydd-tabs, .ydd-tab {
+            background: #fff;
+            border-color: #d5e7f3
+        }
+
+        #yddBottom {
+            color: #363636
+        }
+
+        #yddWrapper {
+            min-width: 250px;
+            max-width: 400px;
+        }
+
+        <!--</style>
+    <style type="text/css">
+
+        ._citys {
+            width: 450px;
+            display: inline-block;
+            border: 2px solid #eee;
+            padding: 5px;
+            position: relative;
+            background: #ffffff;
+        }
+
+        ._citys span {
+            color: #56b4f8;
+            height: 15px;
+            width: 15px;
+            line-height: 15px;
+            text-align: center;
+            border-radius: 3px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            border: 1px solid #56b4f8;
+            cursor: pointer;
+        }
+
+        ._citys0 {
+            width: 100%;
+            height: 34px;
+            display: inline-block;
+            border-bottom: 2px solid #56b4f8;
+            padding: 0;
+            margin: 0;
+        }
+
+        ._citys0 li {
+            display: inline-block;
+            line-height: 34px;
+            font-size: 15px;
+            color: #888;
+            width: 80px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .citySel {
+            background-color: #56b4f8;
+            color: #fff !important;
+        }
+
+        ._citys1 {
+            width: 100%;
+            display: inline-block;
+            padding: 10px 0;
+        }
+
+        ._citys1 a {
+            width: 83px;
+            height: 35px;
+            display: inline-block;
+            background-color: #f5f5f5;
+            color: #666;
+            margin-left: 6px;
+            margin-top: 3px;
+            line-height: 35px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 13px;
+            overflow: hidden;
+        }
+
+        ._citys1 a:hover {
+            color: #fff;
+            background-color: #56b4f8;
+        }
+
+        .AreaS {
+            background-color: #56b4f8 !important;
+            color: #fff !important;
+        }
+    </style>
 </head>
 <body>
 <!-- Header -->
@@ -61,7 +295,7 @@
                             <!--class="caret"></span></a>-->
                             <!--<ul class="dropdown-menu">-->
                             <!--<li>-->
-                            <!--<a href="http://demo.cssmoban.com/cssthemes4/sbtp_51_moban2234/about_us.html">-->
+                            <!--<a href="">-->
                             <!--About Us </a></li>-->
                             <!--<li><a href="#"> Customer Service </a></li>-->
                             <!--<li><a href="#"> Privacy Policy </a></li>-->
@@ -186,7 +420,7 @@
     <div class="nav-inner">
         <!-- BEGIN NAV -->
         <ul id="nav" class="">
-            <li class="drop-menu a"><a href="index.html" class="level-top active"><span>全部产品导航</span></a>
+            <li class="drop-menu a"><a href="javascript:;" class="level-top active"><span>全部产品导航</span></a>
                 <div class="banner1_wrap">
                     <div class="banner1" style="width: 230px;">
                         <ul class="banner1_left">
@@ -238,9 +472,7 @@
                                     </ul>
                                 </div>
                                 <div class="second_menu_right" style="cursor: pointer;">
-                                    <a href="https://www.huisuanzhang.com/gongshang.html" target="_blank"><p
-                                            class="second_menu_right_title" style="color: white;line-height: 80px;
-    margin: 0;">开设公司</p></a>
+                                    <a href="AgentBookkeepingList.html" target="_blank"><p class="second_menu_right_title" style="color: white;line-height: 80px;margin: 0;">开设公司</p></a>
 
                                 </div>
                                 <div class="second_menu_left">
@@ -279,7 +511,7 @@
 
                                 </div>
                                 <div class="second_menu_right" style="cursor: pointer;">
-                                    <a href="https://www.huisuanzhang.com/account.html" target="_blank"><p
+                                    <a href="InternalAndForeignList.html" target="_blank"><p
                                             class="second_menu_right_title" style="color: white;line-height: 80px;
     margin: 0;">财税服务</p></a>
                                 </div>
@@ -323,8 +555,8 @@
                                     </ul>
                                 </div>
                                 <div class="second_menu_right" style="cursor: pointer;">
-                                    <a href="index.html" target="_blank"><p class="second_menu_right_title"
-                                                                            style="color: white;line-height: 80px;
+                                    <a href="TaxPlanningList.html" target="_blank"><p class="second_menu_right_title"
+                                                                                      style="color: white;line-height: 80px;
     margin: 0;">人事社保</p></a>
 
 
@@ -369,8 +601,8 @@
 
                                 </div>
                                 <div class="second_menu_right" style="cursor: pointer;">
-                                    <a href="javascript:void(0);" target="_blank"><p class="second_menu_right_title"
-                                                                                     style="color: white;line-height: 80px;
+                                    <a href="OperatingLicenseList.html" target="_blank"><p class="second_menu_right_title"
+                                                                                           style="color: white;line-height: 80px;
     margin: 0;">法律服务</p></a>
 
 
@@ -407,15 +639,15 @@
 
                                 </div>
                                 <div class="second_menu_right" style="cursor: pointer;">
-                                    <a href="javascript:void(0);" target="_blank"><p class="second_menu_right_title"
-                                                                                     style="line-height: 80px;
+                                    <a href="TrademarkList.html" target="_blank"><p class="second_menu_right_title"
+                                                                                    style="line-height: 80px;
     margin: 0;color: white;">知识产权</p></a>
 
 
                                 </div>
                                 <div class="second_menu_left">
-                                    <img src="./images/second_menu_left3.png" alt="增值服务图标"
-                                         class="second_menu_left3">
+                                    <img src="./images/second_menu_left5.png" alt="增值服务图标"
+                                         class="second_menu_left5">
                                 </div>
                             </li>
                             <li class="second_menu6 second_menu">
@@ -447,15 +679,15 @@
 
                                 </div>
                                 <div class="second_menu_right" style="cursor: pointer;">
-                                    <a href="javascript:void(0);" target="_blank"><p class="second_menu_right_title"
-                                                                                     style="line-height: 80px;
+                                    <a href="CompanyChangesList.html" target="_blank"><p class="second_menu_right_title"
+                                                                                         style="line-height: 80px;
     margin: 0;color: white;">金融服务</p></a>
 
 
                                 </div>
                                 <div class="second_menu_left">
-                                    <img src="./images/second_menu_left3.png" alt="增值服务图标"
-                                         class="second_menu_left3">
+                                    <img src="./images/second_menu_left6.png" alt="增值服务图标"
+                                         class="second_menu_left6">
                                 </div>
                             </li>
 
@@ -463,9 +695,9 @@
                     </div>
                 </div>
             </li>
-            <li class="drop-menu"><a href="" class="level-top"> <span>首页</span></a></li>
-            <li class="mega-menu"><a class="level-top" href="single_productList.html"><span>人事社保</span></a></li>
-            <li class="mega-menu"><a class="level-top" href="single_productList.html"><span>财税服务</span></a></li>
+            <li class="drop-menu"><a href="index.html" class="level-top"> <span>首页</span></a></li>
+            <li class="mega-menu"><a class="level-top" href=""><span>人事社保</span></a></li>
+            <li class="mega-menu"><a class="level-top" href=""><span>财税服务</span></a></li>
             <li class="mega-menu"><a class="level-top" href="blog.html"><span>企业动态</span></a></li>
             <li class="mega-menu"><a class="level-top" href="about.html"><span>关于我们</span></a></li>
             <!--<li class="mega-menu"><a class="level-top" href="shop_grid.html"><span>Drinks</span></a></li>-->
@@ -601,12 +833,16 @@
                 <div class="Banner_BottomT2">
                     <p>地区</p>
                     <label for="">
-                        <select class="Banner_BottomT2se">
-                            <option value="volvo">1</option>
-                            <option value="saab">3</option>
-                            <option value="opel">6</option>
-                            <option value="audi">12</option>
-                        </select>
+                        <input type="text" readonly="readonly" autocomplete="off" placeholder="选择城市" value="苏州市"
+                               class="el-input__inner" id="city" style="width:180px;height:51px;background:rgba(255,255,255,0);border:1px solid rgba(221, 221, 221, 1);">
+
+
+                        <script type="text/javascript">
+                            $("#city").click(function (e) {
+                                SelCity(this, e);
+                                console.log("inout", $(this).val(), new Date())
+                            });
+                        </script>
                     </label>
                 </div>
             </div>
@@ -648,7 +884,7 @@
                     </li>
                 </ul>
                 <div class="ABK_Box1SectionCenter">
-                    <img src="" alt="">
+                    <img src="./images/ABK_Box1SectionCenter.png" alt="">
                 </div>
                 <ul class="ABK_Box1SectionRight">
                     <li class="ABK_Box1SectionRightLi">

@@ -19,26 +19,26 @@ $(function () {
         }
     });
     $(".banner1_wrap .banner1 .banner1_left .second_menu1").hover(function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left1").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left1_1.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left1").attr({"src": "./images/second_menu_left1_1.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu1 .second_menu_right .second_menu_right_title").css({"color": "#222"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu1").css({"background": "white"});
         $(".banner1_wrap .banner1").css({"width": "820px"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu1_1").css({"display": "block"});
     }, function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left1").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left1.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left1").attr({"src": "./images/second_menu_left1.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu1 .second_menu_right .second_menu_right_title").css({"color": "white"});
         $(this).css({"background": "#929292"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menus").css({"display": "none"});
         $(".banner1_wrap .banner1").css({"width": "220px"});
     });
     $(".banner1_wrap .banner1 .banner1_left .second_menu2").hover(function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left2").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left2_2.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left2").attr({"src": "./images/second_menu_left2_2.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu2 .second_menu_right .second_menu_right_title").css({"color": "#222"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu2").css({"background": "white"});
         $(".banner1_wrap .banner1").css({"width": "820px"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu2_1").css({"display": "block"});
     }, function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left2").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left2.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left2").attr({"src": "./images/second_menu_left2.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu2 .second_menu_right .second_menu_right_title").css({"color": "white"});
         $(this).css({"background": "#929292"});
 
@@ -46,52 +46,52 @@ $(function () {
         $(".banner1_wrap .banner1").css({"width": "220px"});
     });
     $(".banner1_wrap .banner1 .banner1_left .second_menu3").hover(function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left3").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left3_3.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left3").attr({"src": "./images/second_menu_left3_3.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu3 .second_menu_right .second_menu_right_title").css({"color": "#222"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu3").css({"background": "white"});
         $(".banner1_wrap .banner1").css({"width": "820px"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu3_1").css({"display": "block"});
     }, function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left3").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left3.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left3").attr({"src": "./images/second_menu_left3.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu3 .second_menu_right .second_menu_right_title").css({"color": "white"});
         $(this).css({"background": "#929292"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menus").css({"display": "none"});
         $(".banner1_wrap .banner1").css({"width": "220px"});
     });
     $(".banner1_wrap .banner1 .banner1_left .second_menu4").hover(function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left4").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left3_3.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left4").attr({"src": "./images/second_menu_left4_4.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu4 .second_menu_right .second_menu_right_title").css({"color": "#222"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu4").css({"background": "white"});
         $(".banner1_wrap .banner1").css({"width": "820px"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu4_1").css({"display": "block"});
     }, function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left4").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left3.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left4").attr({"src": "./images/second_menu_left4.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu4 .second_menu_right .second_menu_right_title").css({"color": "white"});
         $(this).css({"background": "#929292"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menus").css({"display": "none"});
         $(".banner1_wrap .banner1").css({"width": "220px"});
     });
     $(".banner1_wrap .banner1 .banner1_left .second_menu5").hover(function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left5").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left3_3.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left5").attr({"src": "./images/second_menu_left5_5.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu5 .second_menu_right .second_menu_right_title").css({"color": "#222"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu5").css({"background": "white"});
         $(".banner1_wrap .banner1").css({"width": "820px"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu5_1").css({"display": "block"});
     }, function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left5").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left3.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left5").attr({"src": "./images/second_menu_left5.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu5 .second_menu_right .second_menu_right_title").css({"color": "white"});
         $(this).css({"background": "#929292"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menus").css({"display": "none"});
         $(".banner1_wrap .banner1").css({"width": "230px"});
     });
     $(".banner1_wrap .banner1 .banner1_left .second_menu6").hover(function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left6").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left3_3.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left6").attr({"src": "./images/second_menu_left6_6.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu6 .second_menu_right .second_menu_right_title").css({"color": "#222"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu6").css({"background": "white"});
         $(".banner1_wrap .banner1").css({"width": "820px"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu6_1").css({"display": "block"});
     }, function () {
-        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left6").attr({"src": "/template/1/huisuanzhang/_files/images/index_imgs/second_menu_left3.png"});
+        $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menu_left6").attr({"src": "./images/second_menu_left6.png"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu6 .second_menu_right .second_menu_right_title").css({"color": "white"});
         $(this).css({"background": "#929292"});
         $(".banner1_wrap .banner1 .banner1_left .second_menu .second_menus").css({"display": "none"});
