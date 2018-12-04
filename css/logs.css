@@ -1,0 +1,125 @@
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background: #ffffff;
+    margin:0;
+    padding:0;
+}
+.topimg{
+    width:100vw;
+    background:linear-gradient(207deg,rgba(66,163,255,0.7) 0%,rgba(67,205,255,0.7) 93%);
+}
+.topimg img{
+    position: absolute;
+    width:100%;
+}
+.topTitle{
+    position: absolute;
+    left: 0;
+    right:0;
+    top:100px;
+    text-align: center;
+    margin: 0 auto;
+    font-size:59px;
+    font-weight:bold;
+    color:rgba(238,238,238,1);
+    line-height:31px;
+    text-shadow:0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+.section{
+    width: 510px;
+    height: 340px;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.sectionBox{
+    width:509px;
+    height:375px;
+    background:rgba(255,255,255,0.35);
+    box-shadow:0px 3px 8px 0px rgba(30, 111, 72, 0.35);
+    border-radius:10px;
+    padding: 52px 47px 40px;
+    box-sizing: border-box;
+}
+.sectionBox1 {
+    width: 414px;
+    height: 44px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sectionBox1 input{
+    border: 0;
+    outline:none;
+}
+.sectionBox2{
+    width: 414px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom:50px;
+}
+.sectionBox2_1 {
+    width:280px;
+    height:44px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sectionBox2_1 input{
+    border: 0;
+    outline:none;
+}
+.upcode{
+    margin-left:47px;
+    width:70px;
+    height:14px;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    cursor: pointer;
+}
+.submit{
+    width:414px;
+    height:56px;
+    background:rgba(53,157,255,1);
+    opacity:0.91;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.sectionTitle{
+    margin-top: 20px;
+    text-align: center;
+    font-size:18px;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+}
+.sectionTitle a{
+    font-size:18px;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+}
